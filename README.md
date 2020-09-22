@@ -33,18 +33,18 @@ Threads fairness:
 ### With 64-bit:
 ```
 Test execution summary:
-    total time:                          2.4158s
+    total time:                          1.7353s
     total number of events:              10000
-    total time taken by event execution: 9.6362
+    total time taken by event execution: 6.9303
     per-request statistics:
-         min:                                  0.93ms
-         avg:                                  0.96ms
-         max:                                  9.80ms
-         approx.  95 percentile:               1.00ms
+         min:                                  0.66ms
+         avg:                                  0.69ms
+         max:                                 15.75ms
+         approx.  95 percentile:               0.68ms
 
 Threads fairness:
-    events (avg/stddev):           2500.0000/26.39
-    execution time (avg/stddev):   2.4090/0.00
+    events (avg/stddev):           2500.0000/38.20
+    execution time (avg/stddev):   1.7326/0.00
 ```    
 
 # Help
