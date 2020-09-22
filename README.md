@@ -1,9 +1,9 @@
 # 64-bitify
 Script to make your raspberry pi 64-bit. Works on all Raspberry Pi 4s running Raspberry Pi OS and Raspberry Pi OS-based OSes. This is alpha code and might break your pi. 
 
-Download script:
+Download script: 
 
-Download 64-bit version of TwisterOS:
+Download 64-bit version of TwisterOS: http://download1980.mediafire.com/0d6s18sgqkcg/dbc83jpil9fj54e/TwisterOS-64bit.img.xz
 
 Help: Go to the Pi Labs discord https://discord.gg/QGVRzJ for help with this version of TwisterOS. My nametag is "Raspberry Pi News#7199".
 
