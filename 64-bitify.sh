@@ -2,10 +2,13 @@ title="64-bitify by Raspberry Pi News"
 prompt="Pick an option:"
 options=("Install 64-bit kernal code (do this first!)" "Enable 64-bit kernal" "Disable 64-bit kernal" "Revert config.txt")
 
-echo "This script will make your raspberry pi kernal 64-bit while allowing your 32-bit applications to still run in a 32-bit userland. This is alpha code, so MAKE SURE YOU BACKUP BEFOREHAND, or else you could break your install."
-
 echo "$title"
+echo ""
 PS3="$prompt "
+
+echo "This script will make your OS 64-bit while allowing your 32-bit applications to still run in a 32-bit userland. This is alpha code, so MAKE SURE YOU BACKUP BEFOREHAND, or else you could break your install."
+echo ""
+
 select opt in "${options[@]}" "Quit to shell"; do 
 
     case "$REPLY" in
@@ -15,6 +18,10 @@ select opt in "${options[@]}" "Quit to shell"; do
     3 ) sudo perl -p -i -e 's/arm_64bit=1/#arm_64bit=1/g' /boot/config.txt && echo "64-bit is now disabled";;
     4 ) sudo mv /boot/config.txt.bak /boot/config.txt && echo "Reverted config.txt to when 64-bit was installed";;
     
+    $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
+    *) echo "Invalid option. Try another one.";continue;;
+
     esac
 
 done
+
