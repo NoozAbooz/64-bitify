@@ -17,7 +17,7 @@ select opt in "${options[@]}" "Quit to shell"; do
     2 ) sudo perl -p -i -e 's/#arm_64bit=1/arm_64bit=1/g' /boot/config.txt && echo "64-bit is now enabled" && read -p "The system will now restart. When ready, press [Enter] to continue or [Ctrl-C] to cancel..." && sudo reboot;;
     3 ) sudo perl -p -i -e 's/arm_64bit=1/#arm_64bit=1/g' /boot/config.txt && echo "64-bit is now disabled" && read -p "The system will now restart. When ready, press [Enter] to continue or [Ctrl-C] to cancel..." && sudo reboot;;
     4 ) sudo mv /boot/config.txt.bak /boot/config.txt && echo "Reverted config.txt to when 64-bit was installed" && read -p "The system will now restart. When ready, press [Enter] to continue or [Ctrl-C] to cancel..." && sudo reboot;;
-    5 ) cd ~ && rm 64-bitify.sh && wget https://raw.githubusercontent.com/mobilegmYT/64-bitify/master/64-bitify.sh && chmod +x 64-bitify.sh;; 
+    5 ) rm 64-bitify.sh && wget https://raw.githubusercontent.com/mobilegmYT/64-bitify/master/64-bitify.sh && chmod +x 64-bitify.sh;; 
 	
     $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
     *) echo "Invalid option. Try another one.";continue;;
