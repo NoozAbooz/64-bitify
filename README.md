@@ -11,7 +11,7 @@ Download script to make your existing install 64-bit: `cd ~ && wget https://raw.
 Download 64-bit img version of TwisterOS: http://download1980.mediafire.com/0d6s18sgqkcg/dbc83jpil9fj54e/TwisterOS-64bit.img.xz
 
 # Performance
-The pi isn't noticably faster, but if you do a high-performance task like creating a large file, then it certainly shaves some time off. Here is a benchmark I did with sysbenchmark(both tests ran the same settings of `sysbench --test=cpu --cpu-max-prime=2000 --num-threads=4 run`):
+The pi isn't noticably faster, but if you do a high-performance task like creating a large file, then it certainly shaves some time off. Here is a benchmark I did with sysbenchmark(both tests ran the same settings of) `sysbench --test=cpu --cpu-max-prime=2000 --num-threads=4 run`
 
 ### Without 64-bit:
 ```
