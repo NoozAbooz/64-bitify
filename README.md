@@ -11,7 +11,37 @@ Download script to make your existing install 64-bit: `cd ~ && wget https://raw.
 Download 64-bit img version of TwisterOS: http://download1980.mediafire.com/0d6s18sgqkcg/dbc83jpil9fj54e/TwisterOS-64bit.img.xz
 
 # Performance
-The pi isn't noticably faster, but if you do a high-performance task like 
+The pi isn't noticably faster, but if you do a high-performance task like creating a large file, then it certainly shaves some time off. Here is a benchmark I did with sysbenchmark(both tests ran the same settings of `sysbench --test=cpu --cpu-max-prime=2000 --num-threads=4 run`):
+
+### Without 64-bit:
+`Test execution summary:
+    total time:                          2.3952s
+    total number of events:              10000
+    total time taken by event execution: 9.5670
+    per-request statistics:
+         min:                                  0.93ms
+         avg:                                  0.96ms
+         max:                                 13.02ms
+         approx.  95 percentile:               0.95ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/11.90
+    execution time (avg/stddev):   2.3918/0.00`
+
+### With 64-bit:
+`Test execution summary:
+    total time:                          2.4158s
+    total number of events:              10000
+    total time taken by event execution: 9.6362
+    per-request statistics:
+         min:                                  0.93ms
+         avg:                                  0.96ms
+         max:                                  9.80ms
+         approx.  95 percentile:               1.00ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/26.39
+    execution time (avg/stddev):   2.4090/0.00`
 
 # Help
 Go to the Pi Labs discord https://discord.gg/QGVRzJ for help with this version of TwisterOS. My nametag is "Raspberry Pi News#7199".
