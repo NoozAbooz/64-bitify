@@ -52,5 +52,5 @@ Go to the Pi Labs discord https://discord.gg/QGVRzJ for help with this version o
 
 # Credits
 The code to make your pi 64-bit is from https://medium.com/for-linux-users/how-to-make-your-raspberry-pi-4-faster-with-a-64-bit-kernel-77028c47d653.
-Thanks to MonkaBlyat and the sSupreme team for the code to enable and disable 64-bit
+Thanks to MonkaBlyat and the Supreme team for the code to enable and disable 64-bit
 Thanks to the Pi Labs devs for the original Twister OS image.
